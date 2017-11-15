@@ -122,7 +122,7 @@ void Statement::print()
         {
             transactions[i].print();
             i++;
-            std::cout << daily_balances[i - 1] << std::setw(10) << std::left << std::endl;
+            std::cout << std::setw(12) << std::right << daily_balances[i - 1] << std::endl;
         }
         else
             day = 31;
